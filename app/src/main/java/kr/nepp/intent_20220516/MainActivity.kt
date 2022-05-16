@@ -19,6 +19,14 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+        
+        btnSendMessage.setOnClickListener { 
+            
+//            1. 입력한 내용을 변수에 저장
+            
+//            2. 메세지 보여주는 화면으로 (1의 변수를 들고) 이동
+            
+        }
 
     }
 }
