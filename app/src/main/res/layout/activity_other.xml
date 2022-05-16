@@ -16,6 +16,7 @@
         android:text="여기는, 다른 화면 입니다." />
 
     <Button
+        android:id="@+id/btnReturnToMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="메인 화면으로 돌아가기" />
