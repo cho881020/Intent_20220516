@@ -5,7 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="여기는 메인화면" />
+
+    <Button
+        android:id="@+id/btnMoveToOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다른 화면으로 이동하기" />
 
 </LinearLayout>
