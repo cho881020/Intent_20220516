@@ -54,4 +54,33 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+//        닉네임을 받아돌아온게 맞는가?
+
+        if (requestCode == REQ_CODE_NICKNAME) {
+
+//            확인 누른게 맞는가?
+
+            if (resultCode == RESULT_OK) {
+
+//                첨부된 닉네임을 꺼내서 => 텍스트뷰에 반영
+
+//                data변수가 이전의 화면의 resultIntent를 담고 있다.
+
+                val newNickname =  data?.getStringExtra("nick") // kotlin의 null 관리 문법
+
+                txtNickname.text = newNickname
+
+            }
+
+
+        }
+
+
+    }
+
+
 }
